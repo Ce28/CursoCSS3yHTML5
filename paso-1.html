@@ -1,60 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Portfolio | Home</title>
+	<meta charset="UTF-8">
+	<title>Portfolio | Home</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
-    <header>
-        <h1><img src="" alt="brushell"></h1>
-    </header>
+	<div class="wrapper paso-1">
+		<header class="header">
+			<div class="contain">
+				<h1><img src="images/logo.jpg" alt="brushell"></h1>
+			</div>
+		</header>
 
-    <nav>
-        <span>1 <span>Datos personales</span></span>
-        <span>2 <span>Otros de interés</span></span>
-        <span>3 <span>Finalizar</span></span>
-    </nav>
+		<nav class="navbar">
+			<span class="item"><span>1</span> <span>Datos personales</span></span>
+			<span class="item"><span>2</span> <span>Otros de interés</span></span>
+			<span class="item"><span>3</span> <span>Finalizar</span></span>
+		</nav>
+		
+		<div class="contain content">
+			<header>
+				<h2>¡Hola!,</h2>
+				<p>En pocos minutos pasarás a formar parte de la red social.</p>
+			</header>
 
-    <header>
-        <h2>¡HOLA!,</h2>
-        <p>En pocos minutos pasarás a formar parte de la red social.</p>
-    </header>
+			<form class="form">
+				<fieldset>
+					<div class="col file">
+						<input type="file">
+					</div>
 
-    <form>
-        <input type="file">
+					<div class="col">
+						<label>NOMBRE <span class="tooltip">?</span></label>
+						<input type="text">
 
-        <label>NOMBRE <span>?</span></label>
-        <input type="text">
+						<label>USUARIO <span class="tooltip">?</span></label>
+						<input type="text">
 
-        <label>USUARIO <span>?</span></label>
-        <input type="text">
+						<label>EMAIL <span class="tooltip">?</span></label>
+						<input type="email">
+					</div>
 
-        <label>EMAIL <span>?</span></label>
-        <input type="email">
+					<div class="col">
+						<label>SELECCIONA GENERO <span class="tooltip">?</span></label>
+						<select></select>
 
-        <label>SELECCIONA GENERO <span>?</span></label>
-        <select></select>
+						<label>CONTRASEÑA <span class="tooltip">?</span></label>
+						<input type="password">
 
-        <label>CONTRASEÑA <span>?</span></label>
-        <input type="password">
+				        <label>FECHA DE NACIMIENTO <span class="tooltip">?</span></label>
+						<div class="fecha_nacimiento">
+							<input type="text" class="small">
+							<input type="text" class="small">
+							<input type="text" class="small">
+						</div>
+					</div>
+					
+					<div class="col all">
+						<input type="checkbox">
+						<span>Lorem ipsum dolor si et amet</span>
+					</div>
+				</fieldset>
 
-        <label>FECHA DE NACIMIENTO <span>?</span></label>
-        <input type="text">
-        <input type="text">
-        <input type="text">
+				<input type="submit" value="Siguiente">
 
-        <input type="checkbox">
-        <p>Lorem ipsum dolor si et amet</p>
-
-        <input type="submit" value="Siguiente">
-    </form>
+			</form>
+		</div>
+	</div>
+	
 </body>
 </html>
